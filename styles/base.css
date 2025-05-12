@@ -159,18 +159,6 @@ aside.home-aside {
     border-radius: 10px; 
 }
 
-.home-h2 {
-    font-size: 2.5rem;
-    margin-top: 15px;
-    padding: 8px;
-    text-align: center;
-    color: var(--main-text-color);
-    background-color: var(--main-background-color);
-    font-family: var(--main-font);
-    border-radius: 25px 25px 0 0;
-    max-width: 30rem;
-}
-
 .home-h3 {
     font-size: 2.5rem;
     margin-top: 15px;
