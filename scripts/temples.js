@@ -1,3 +1,17 @@
+//Hamburger Menu Button
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const closeMenu = document.getElementById("close-menu");
+    const nav = document.getElementById("main-nav");
+
+    menuToggle.addEventListener("click", () => {
+        nav.classList.add("open");
+    });
+
+    closeMenu.addEventListener("click", () => {
+        nav.classList.remove("open");
+    });
+});
 // Function to display the current year
 function currentyear() {
     const currentYear = new Date().getFullYear(); // Get the current year

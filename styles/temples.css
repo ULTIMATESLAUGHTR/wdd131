@@ -1,0 +1,241 @@
+:root {
+    --main-background-color: #0d90c4;
+    --secondary-background-color: #ffffff;
+    --main-text-color: #ffffff;
+    --secondary-text-color: #000000;
+    --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
+
+
+/* Hamburger button styles */
+#menu-toggle, #close-menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    z-index: 10;
+    color: var(--main-text-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    font-size: 3.2rem;
+
+}
+
+#close-menu {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    top: 1.5rem;
+    right: 3rem;
+    z-index: 10;
+    color: var(--main-text-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    font-size: 3.2rem;
+}
+@media (max-width: 850px) {
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 3rem;
+        z-index: 10;
+    }
+    #main-nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        z-index: 9;
+    }
+    #main-nav.open {
+        display: block;
+    }
+    #main-nav.open #close-menu {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 3rem;
+        z-index: 11;
+    }
+}
+.header-p {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    text-align: left;
+    font-size: 2rem;
+    max-width: 1600px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+    background-color: #0d90c4;
+    color: var(--main-text-color);
+    text-decoration: none;
+    border-radius: 25px;
+    list-style: none;
+    max-width: 1600px;
+    min-width: 750px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+nav a {
+    display: block;
+    justify-content: space-around;
+    color: var(--main-text-color);
+    text-decoration: none;
+    font-size: 2.3rem;
+    padding: 10px 10px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    list-style: none;
+    gap: 50px;
+    font-family: var(--main-font);
+    box-shadow: 0 0 0 transparent;
+    max-width: 1400px;
+    
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-size: 3rem;
+    color: var(--secondary-text-color);
+    text-align: center;
+    margin-top: 2rem;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    background-color: #0a6f9c;
+    box-shadow: 0 0 10px rgba(10, 111, 156, 0.5);
+    color: #ffffff;
+}
+
+.temple-album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.temple-album-grid figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figcaption {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    background-color: var(--main-background-color);
+    border-radius: 15px;
+
+}
+
+.temple-album-grid img.temple-image {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 850px) {
+    .temple-album-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .temple-album-grid img.temple-image {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+    }
+}
+
+footer {
+    font-size: 1.8rem;
+    margin-top: 21rem;
+    padding: 10px;
+    text-align: center;
+    color: var(--main-text-color);
+    background-color: var(--main-background-color);
+    font-family: var(--main-font);
+    border-radius: 75px 0 75px 25px;
+    max-width: 1600px;
+    min-width: 850px;
+    max-height: 400px;
+} 

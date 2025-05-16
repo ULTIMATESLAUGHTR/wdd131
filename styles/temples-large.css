@@ -1,0 +1,32 @@
+:root {
+    --main-background-color: #0d90c4;
+    --main-text-color: #ffffff;
+    --main-font: 'Montserrat', Helvetica, sans-serif;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-light-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "width" 100;
+}
