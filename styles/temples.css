@@ -33,73 +33,6 @@
     "width" 100;
 }
 
-
-/* Hamburger button styles */
-#menu-toggle, #close-menu {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-#menu-toggle {
-    display: none;
-    position: absolute;
-    top: 1.5rem;
-    right: 3rem;
-    z-index: 10;
-    color: var(--main-text-color);
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    font-size: 3.2rem;
-
-}
-
-#close-menu {
-    display: none;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 10;
-    top: 1.5rem;
-    right: 3rem;
-    z-index: 10;
-    color: var(--main-text-color);
-    padding: 0.5rem;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-    font-size: 3.2rem;
-}
-@media (max-width: 850px) {
-    #menu-toggle {
-        display: block;
-        position: absolute;
-        top: 1.5rem;
-        right: 3rem;
-        z-index: 10;
-    }
-    #main-nav {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: white;
-        z-index: 9;
-    }
-    #main-nav.open {
-        display: block;
-    }
-    #main-nav.open #close-menu {
-        display: block;
-        position: absolute;
-        top: 1.5rem;
-        right: 3rem;
-        z-index: 11;
-    }
-}
 .header-p {
     background-color: var(--main-background-color);
     color: var(--main-text-color);
@@ -156,7 +89,7 @@ nav a {
     gap: 50px;
     font-family: var(--main-font);
     box-shadow: 0 0 0 transparent;
-    max-width: 1400px;
+    max-width: 1600px;
     
 }
 
@@ -215,20 +148,9 @@ figcaption {
     border-radius: 12px;
 }
 
-@media (max-width: 850px) {
-    .temple-album-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .temple-album-grid img.temple-image {
-        width: 100%;
-        max-width: 400px;
-        height: 400px;
-    }
-}
-
 footer {
-    font-size: 1.8rem;
-    margin-top: 21rem;
+    font-size: 2.3rem;
+    margin-top: 1rem;
     padding: 10px;
     text-align: center;
     color: var(--main-text-color);
@@ -237,5 +159,72 @@ footer {
     border-radius: 75px 0 75px 25px;
     max-width: 1600px;
     min-width: 850px;
-    max-height: 400px;
+    max-height: 800px;
 } 
+
+/* Putting all Mobile CSS Rulesets After the Footer */
+@media (max-width: 850px) and (min-width: 200px) {
+    .temple-album-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .temple-album-grid figure {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .temple-album-grid img.temple-image {
+        width: 100%;
+        max-width: 400px;
+        height:300px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+    figcaption {
+        font-size: 1.8rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 850px) and (min-width: 200px) {
+    #menu-toggle {
+        display: block !important;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        color: var(--main-text-color);
+        z-index: 101;
+    }
+}
+/* Hide hamburger by default on larger and smaller screens */
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 850px) and (min-width: 400px) {
+    nav ul,
+    nav li,
+    nav a {
+        display: none !important;
+    }
+    .header-p {
+        display: block !important;
+    }
+    #menu-toggle,
+    #close-menu {
+        display: block !important;
+        position: absolute;
+        top: 0.4rem;
+        right: 4rem;
+        font-size: 4rem;
+        background: none;
+        border: none;
+        color: var(--main-text-color);
+        z-index: 100;
+    }
+}
