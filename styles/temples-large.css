@@ -144,8 +144,8 @@ figcaption {
 }
 
 footer {
-    font-size: 1.5rem;
-    margin-top: 21rem;
+    font-size: 2rem;
+    margin-top: 5rem;
     padding: 10px;
     text-align: center;
     color: var(--main-text-color);
@@ -154,7 +154,7 @@ footer {
     border-radius: 75px 0 75px 25px;
     max-width: 1600px;
     min-width: 850px;
-    max-height: 400px;
+    max-height: 700px;
 }
 }
 
