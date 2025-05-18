@@ -160,7 +160,7 @@ footer {
 } 
 
 /* Putting all Mobile CSS Rulesets After the Footer */
-@media (max-width: 850px) and (min-width: 200px) {
+@media (max-width: 999px) and (min-width: 200px) {
     .temple-album-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
@@ -185,7 +185,7 @@ footer {
     }
 }
 
-@media (max-width: 850px) and (min-width: 200px) {
+@media (max-width: 999px) and (min-width: 200px) {
     #menu-toggle {
         display: block !important;
         position: absolute;
@@ -203,7 +203,7 @@ footer {
     display: none;
 }
 
-@media (max-width: 850px) and (min-width: 400px) {
+@media (max-width: 999px) and (min-width: 200px) {
     nav ul,
     nav li,
     nav a {
