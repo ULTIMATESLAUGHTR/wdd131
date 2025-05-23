@@ -5,3 +5,85 @@
     --secondary-text-color: #000000;
     --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
 }
+
+@media (max-width: 1000px) {
+    :root {
+        --main-background-color: #6CACE4;
+        --secondary-background-color: #ffffff;
+        --main-text-color: #ffffff;
+        --secondary-text-color: #000000;
+        --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
+    }
+
+    h1 {
+        font: var(--main-font);
+        font-size: 8.7rem;
+        font-weight: bold;
+        font-style: normal;
+        background-color: var(--main-background-color);
+        color: var(--main-text-color);
+        text-align: center;
+        border-color: #173E69;
+        border-style: solid;
+        border-width: 15px;
+        padding: 3rem;
+    }
+
+    .large-hero-image {
+    display: none;
+    }
+
+    .hero-mobile-image {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+        border-radius: 30px;
+        border: 5px solid #173E69;
+    }
+    .data-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        font: var(--main-font);
+        font-size: 2.5rem;
+        font-weight: 500;
+        background-color: rgba(108, 172, 228, 0.4);
+    }
+    .bold-wording {
+        font-weight: bold;
+        color: var(--secondary-text-color);
+    }
+
+    .weather-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        font: var(--main-font);
+        font-size: 2.5rem;
+        font-weight: 500;
+        background-color: rgba(108, 172, 228, 0.4);
+    }
+
+    .weather-icon {
+        width: 300px;
+        height: 300px;
+        margin-top: 2rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        font: var(--main-font);
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: rgba(108, 172, 228, 0.4);
+    }
+}
