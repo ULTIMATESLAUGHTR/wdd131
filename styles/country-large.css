@@ -18,29 +18,7 @@
         border-radius: 30px;
         border: 5px solid #173E69;
     }
-    .data-section {
-        position: absolute;
-        top: 2rem;
-        left: 2rem;
-        z-index: 2;
-        background: rgba(255,255,255,0.85);
-        padding: 1.5rem 2rem;
-        border-radius: 20px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        max-width: 35vw;
-    }
-    .weather-section {
-        position: absolute;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 2;
-        background: rgba(255,255,255,0.85);
-        padding: 1.5rem 2rem;
-        border-radius: 20px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        max-width: 35vw;
-    }
-
+    
     .hero-mobile-image {
         display: none;
     }
@@ -65,7 +43,7 @@
 
     .data-heading {
         font-family: var(--main-font);
-        font-size: 2.3rem;
+        font-size: 3rem;
         font-weight: bold;
         color: var(--main-text-color);
         margin-bottom: 1rem;
@@ -81,7 +59,7 @@
 
     .weather-heading {
         font-family: var(--main-font);
-        font-size: 2.3rem;
+        font-size: 3rem;
         font-weight: bold;
         color: var(--main-text-color);
         margin-bottom: 1rem;
@@ -109,6 +87,8 @@
         font-size: 2.3rem;
         font-weight: bold;
         background-color: rgba(108, 172, 228, 0.4);
+        max-height: 200px;
+        padding: 4rem;
     }
 }
 
@@ -120,5 +100,29 @@
         margin-left: 1rem;
         width: 48px;
         height: 48px;
+    }
+}
+@media (min-width: 1001px) {
+.data-section,
+    .weather-section {
+        position: absolute;
+        z-index: 2;
+        background: rgba(255,255,255,0.85);
+        padding: 2rem 2.5rem;
+        border-radius: 20px;
+        max-width: 400px;
+        min-width: 250px;
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        word-break: break-word; 
+    }
+    .data-section {
+        top: 2rem;
+        left: 2rem;
+    }
+    .weather-section {
+        bottom: 2rem;
+        right: 2rem;
     }
 }
