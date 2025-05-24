@@ -1,0 +1,124 @@
+@media (min-width: 1001px) {
+    :root {
+        --main-background-color: #6CACE4;
+        --secondary-background-color: #ffffff;
+        --main-text-color: #ffffff;
+        --secondary-text-color: #000000;
+        --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
+    }
+    .hero-container {
+        position: relative;
+    }
+    .large-hero-image {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 30px;
+        border: 5px solid #173E69;
+    }
+    .data-section {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        z-index: 2;
+        background: rgba(255,255,255,0.85);
+        padding: 1.5rem 2rem;
+        border-radius: 20px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        max-width: 35vw;
+    }
+    .weather-section {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 2;
+        background: rgba(255,255,255,0.85);
+        padding: 1.5rem 2rem;
+        border-radius: 20px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        max-width: 35vw;
+    }
+
+    .hero-mobile-image {
+        display: none;
+    }
+    h1 {
+        font-family: var(--main-font);
+        font-size: 10.5rem;
+        font-weight: bold;
+        font-style: normal;
+        background-color: var(--main-background-color);
+        color: var(--main-text-color);
+        text-align: center;
+        border-color: #173E69;
+        border-style: solid;
+        border-width: 15px;
+        padding: 3rem;
+    }
+
+    .bold-wording {
+        font-weight: bold;
+        color: var(--secondary-text-color);
+    }
+
+    .data-heading {
+        font-family: var(--main-font);
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: var(--main-text-color);
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+        margin-left: -3rem;
+        margin-right: -4rem;
+        text-align: justify;
+        text-transform: uppercase;
+        border-color:#173E69;
+        border-style: solid;
+        background-color:#6CACE4
+    }
+
+    .weather-heading {
+        font-family: var(--main-font);
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: var(--main-text-color);
+        margin-bottom: 1rem;
+        margin-top: -2rem;
+        margin-left: -3rem;
+        margin-right: -4rem;
+        text-align: justify;
+        text-transform: uppercase;
+        border-color:#173E69;
+        border-style: solid;
+        background-color:#6CACE4
+    }
+
+    .weather-icon {
+        display: none;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        font-family: var(--main-font);
+        font-size: 2.3rem;
+        font-weight: bold;
+        background-color: rgba(108, 172, 228, 0.4);
+    }
+}
+
+@media (min-width: 1001px) {
+    .weather-heading::after {
+        content: url('../images/sunny-day-svg-icon.svg');
+        display: none;
+        vertical-align: middle;
+        margin-left: 1rem;
+        width: 48px;
+        height: 48px;
+    }
+}
