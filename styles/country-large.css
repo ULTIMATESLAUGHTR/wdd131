@@ -4,7 +4,7 @@
         --secondary-background-color: #ffffff;
         --main-text-color: #ffffff;
         --secondary-text-color: #000000;
-        --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
+        --main-font: 'Roboto', Helvetica, sans-serif;
     }
     .hero-container {
         position: relative;
@@ -34,6 +34,8 @@
         border-style: solid;
         border-width: 15px;
         padding: 3rem;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 
     .bold-wording {
