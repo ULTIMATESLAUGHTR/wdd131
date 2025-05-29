@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Picture Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="author" content="Aaron Islas">
+    <meta name="description" content="A collection of temple pictures with mobile and desktop views for practice.">
+</head>
+<body>
+<header>
+    <nav id="main-nav">
+        <button id="menu-toggle" aria-label="Open navigation">&#9776;</button>
+        <button id="close-menu" aria-label="Close navigation">&times;</button>
+        <p class="header-p">Temple Album</p>  
+        <ul class="nav-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">Old</a></li>
+            <li><a href="">New</a></li>
+            <li><a href="">Large</a></li>
+            <li><a href="">Small</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>A List of Temples</h1>
+    <div class="temple-album-grid" id="templeAlbumGrid"></div>        
+</main>
+<footer>
+    <p>&copy; Copyright Year: <span id="currentyear"></span></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&#10070; Aaron Islas &#10070; Utah, United States of America</p>
+</footer>
+</body>
+</html>
