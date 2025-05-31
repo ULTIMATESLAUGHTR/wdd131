@@ -141,8 +141,7 @@ footer {
     background-color: var(--main-background-color);
     font-family: var(--main-font);
     border-radius: 75px 0 75px 25px;
-    max-width: 1600px;
-    min-width: 999px;
+    max-width: 1001px;
     max-height: 800px;
 } 
 
