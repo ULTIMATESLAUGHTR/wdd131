@@ -4,7 +4,7 @@
     --main-text-color: #ffffff;
     --secondary-text-color: #000000;
     --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
-
+}
 .ubuntu-regular {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -191,5 +191,4 @@ footer {
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 }
