@@ -99,9 +99,12 @@ nav a {
 h1 {
     font-family: var(--main-font);
     font-size: 3rem;
-    color: var(--secondary-text-color);
+    color: var(--main-text-color);
     text-align: center;
     margin-top: 2rem;
+    max-width: 1600px;
+    border-radius: 75px 0 75px 25px;
+
 }
 
 main {
@@ -123,7 +126,7 @@ nav a:hover {
 }
 
 footer {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     margin-top: 1rem;
     margin-bottom: -1rem;
     padding: 10px;
