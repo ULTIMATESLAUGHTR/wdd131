@@ -1,4 +1,4 @@
-@media (min-width: 1001px) and (max-width: 1600px) {
+@media (min-width: 1001px) and (max-width: 2000px) {
 :root {
     --main-background-color: #0d90c4;
     --secondary-background-color: #ffffff;
@@ -150,8 +150,8 @@ footer {
     color: var(--main-text-color);
     font-family: var(--main-font);
     text-align: center;
-    font-size: 0.5rem;
-    width: 95%;
+    font-size: 2rem;
+    width: 90%;
     padding: 20px;
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
