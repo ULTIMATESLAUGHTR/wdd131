@@ -1,16 +1,10 @@
-@media (min-width: 1000px) and (max-width: 1800px) {
+@media (min-width: 1001px) and (max-width: 1600px) {
 :root {
     --main-background-color: #0d90c4;
     --secondary-background-color: #ffffff;
     --main-text-color: #ffffff;
     --secondary-text-color: #000000;
-    --main-font: 'Roboto','Ubuntu', Helvetica, sans-serif;
-}
-
-.ubuntu-light {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    --main-font: 'Roboto','Montserrat', Helvetica, sans-serif;
 }
 
 .ubuntu-regular {
@@ -28,6 +22,7 @@
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-style: normal;
 }
 
 .header-p {
@@ -36,49 +31,35 @@
     font-family: var(--main-font);
     text-align: left;
     font-size: 2rem;
-    max-width: 1600px;
+    margin-bottom: 6.5rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 50px;
     font-family: var(--main-font);
-    font-size: 1.2rem;
     background-color: #0d90c4;
     color: var(--main-text-color);
     text-decoration: none;
     border-radius: 25px;
     list-style: none;
     max-width: 1600px;
-    min-width: 750px;
+    min-width: 1001px;
+    align-items: center;
+    max-height: 200px;
 }
-
-nav ul {
-    list-style: none;
-    margin: 10px;
+nav a {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-    max-width: 1400px;
-}
-
-nav li {
-    flex-grow: 1;
-    text-align: center;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 15px;
-}
-
-nav a {
-    display: block;
+    align-items: center;
     justify-content: space-around;
     color: var(--main-text-color);
     text-decoration: none;
-    font-size: 2.3rem;
     padding: 10px 10px;
     border-radius: 25px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -86,8 +67,34 @@ nav a {
     gap: 50px;
     font-family: var(--main-font);
     box-shadow: 0 0 0 transparent;
-    max-width: 1400px;
-}
+    max-width: 1600px;
+}    
+    .nav-list {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        position: static !important;
+        background: none !important;
+        width: auto !important;
+        height: auto !important;
+        box-shadow: none !important;
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+    }
+    .nav-list li {
+        margin: 0 1rem;
+        gap: 0;
+        flex-grow: 1;
+        text-align: center;
+        justify-content: space-between;
+        font-size: 3rem;
+    }
+    #menu-toggle,
+    #close-menu {
+        display: none !important;
+    }
 
 h1 {
     font-family: var(--main-font);
@@ -98,7 +105,7 @@ h1 {
 }
 
 main {
-    max-width: 850px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -108,16 +115,6 @@ nav a:hover {
     color: #ffffff;
 }
 
-.temple-album-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    max-width: 1600px;
-    margin: 0 auto;
-    gap: 2rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-}
-
 .temple-album-grid figure {
     margin: 0;
     display: flex;
@@ -125,27 +122,10 @@ nav a:hover {
     align-items: center;
 }
 
-figcaption {
-    font-size: 2.2rem;
-    text-align: center;
-    margin-top: 0.5rem;
-    color: var(--main-text-color);
-    font-family: var(--main-font);
-    background-color: var(--main-background-color);
-    border-radius: 15px;
-}
-
-.temple-album-grid img.temple-image {
-    width: 100%;
-    max-width: 800px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-}
-
 footer {
-    font-size: 2rem;
-    margin-top: 5rem;
+    font-size: 2.3rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
     padding: 10px;
     text-align: center;
     color: var(--main-text-color);
@@ -153,46 +133,28 @@ footer {
     font-family: var(--main-font);
     border-radius: 75px 0 75px 25px;
     max-width: 1600px;
-    min-width: 850px;
-    max-height: 700px;
-}
-}
-
-@media (min-width: 1000px) and (max-width: 1800px) {
+    max-height: 800px;
+} 
     .temple-album-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-    .temple-album-grid figure {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .temple-album-grid img.temple-image {
-        width: 100%;
-        max-width: 700px;
-        height: 400px;
-        object-fit: cover;
-        border-radius: 12px;
-    }
-    figcaption {
-        font-size: 1.8rem;
-        padding: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box
+}
+    .temple-card {
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    font-family: var(--main-font);
+    text-align: center;
+    font-size: 0.5rem;
+    width: 95%;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 }
 
-@media (min-width: 1001px) {
-    #close-menu {
-        display: none !important;
-    }
-}
-@media (max-width: 1000px) {
-    #close-menu {
-        display: block;
-    }
-}
