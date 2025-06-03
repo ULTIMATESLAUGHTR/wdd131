@@ -78,7 +78,7 @@ nav a {
     text-decoration: none;
     font-size: 2.2rem;
     padding: 5px 5px;
-    border-radius: 25px;
+    border-radius: 25px 5px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     list-style: none;
     gap: 100px;
@@ -95,7 +95,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--main-background-color);
-    box-shadow: 0 0 10px rgba(10, 111, 156, 0.5);
+    box-shadow: 0 0 10px rgba(35, 35, 36, 0.5);
     color: #ffffff;
 }    
 
