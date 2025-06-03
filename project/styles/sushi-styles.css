@@ -45,7 +45,7 @@ nav {
     list-style: none;
     width: 100%;
     max-width: 1000px;
-    min-width: 550px;
+    min-width: 860px;
     max-height: 450px;
     margin: 0 auto;
     font-family: var(--header-font);
