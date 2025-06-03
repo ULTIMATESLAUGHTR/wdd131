@@ -1,0 +1,113 @@
+<!--Project Site Plan - HTML Template-->
+<!--This Project will be divided into 3 Pages. Page 1 will include The Origin of Sushi. 
+Page 2 will deal with Modern Sushi. Page 3 will be my Personal Journey as a Sushi Chef-->
+
+
+<!-- Site Name - sushihistory.org -->
+
+<!--Reason: Easy to recall and fast to type. Gives a quick summary of what the page will be about--> 
+
+<!--This site's purpose is to show the history of sushi, its origins, and how it has evolved over time. It will also include my personal journey as a sushi chef.-->
+
+<!--Scenario Questions: 1. What are the key historical events that shaped sushi's evolution? 
+Scenario Question 2: How has sushi's preparation and presentation changed over time?-->
+
+<!--Color Schema: For the Nav Bar, and containers of information it will be a #E30016 Red. 
+Main text including headings will be in standard white #FFFFFF. 
+Main Background Color will be a shaded black RGB(37, 35, 34, 0.7) - for readability.-->
+
+<!--Typography: Headings will use the Kaushan Script font, while main body text will use the Zen Old Mincho font.-->
+
+<!--Wireframes link to review will be through Moqups
+To See the Mobile Wireframe (Up to 900px) use this link - 
+https://app.moqups.com/qhV0l6OFgGv1AaazJt2W6QIhfbnKZWry/view/page/ad64222d5?fit_width=1-->
+
+<!--Page 1 Home Page Overview and Organization-->
+    <!---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A History of Sushi Home Page</title>
+    <link rel="stylesheet" href="sushi-styles.css">
+    <link rel="stylesheet" href="sushi-styles-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <meta name="author" content="Aaron Islas">
+    <meta name="description" content="Explore the origins of sushi, its evolution, and my personal time being a Sushi Chef.">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <button id="menu-toggle" aria-label="Open navigation">&#9776;</button>
+            <button id="close-menu" aria-label="Close navigation">&times;</button>
+            <ul class="nav-list">
+                <src img src="images/sushi-logo.jpg" alt="Sushi Logo" class="logo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="modern-sushi.html">Modern Sushi</a></li>
+                <li><a href="my-journey.html">My Journey</a></li>
+            </ul>
+    </header>
+<main>
+    <div class="history-container">
+        <h1>A History of Sushi: The Early Years (1336-1867)</h1>
+        <p>This site explores the fascinating journey of sushi from its beginnings and into the modern-day variations.</p>
+        <section class="overview">
+            <h2>Sushi's Humble Beginnings</h2>
+            <p>Sushi began as a method of preserving fish when food was very scarce using vinegar, salt and rice. The rice was at first thrown away, as the fermentation was done for months at a time which made it unsafe for human consumption. This practice originated in South-Eastern Asia, later in China, and was introduced to Japan in the Muromachi period which was between (1336-1573).</p>
+            <!--Insert Image of Narezushi Here-->
+            <p>This was the earliest form of sushi which was called "Narezushi" later in this period the Japanese began to experiment with shorter fermentation times and that led to sushi's first change called "Namanare". This was a partial fermentation which meant the rice could be eaten with the rice.</p> 
+            <!--Insert Image of Namanare Here-->
+            <p>Only until the Edo Period of Japan, which spans the years (1603-1867) did sushi start to evolve from a survival food, into a fast food, then a new term, coined "haya-zushi" came into being. This process gave birth to the sushi we know the most about in the modern era. </p>
+            <!--Insert Table of Sushi Types to include Images of each type Here-->
+            <p>Due to this change, rice was only seasoned with rice-vinegar and salt which allowed for it to be served "as-is" along with the fish and sold on the street by vendors in tandem with their daily fish catches which led to the popularization of sushi as a convenient and delicious meal option.</p>
+    </div>
+        <section class="haya-zushi-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>3 Popular Haya-zushi Types</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nigirizushi</td>
+                        <td><img src="images/nigirizushi.jpg" alt="Nigirizushi"></td>
+                        <td>Description: Fish placed on top of a hand-pressed ball of vinegared rice.</td>
+                    </tr>
+                    <tr>
+                        <td>Chirashizushi</td>
+                        <td><img src="images/chirashizushi.jpg" alt="Chirashizushi"></td>
+                        <td>Description: A sliced assortment of fish that rests over a bed of sushi rice within a bowl.</td>
+                    </tr>
+                    <tr>
+                        <td>Makizushi</td>
+                        <td><img src="images/makizushi.jpg" alt="Makizushi"></td>
+                        <td>Description: Fish wrapped inside of Nori(Seaweed) sheets and vinegared rice to create a roll.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+</main>
+<section class="Sources">
+    <h3>Document and Image Sources</h3>
+    <ul>
+        <li><a href="https://www.history.com/topics/food/sushi">History of Sushi - History.com</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/History_of_sushi">History of Sushi - Wikipedia</a></li>
+        <li><a href="https://www.sushifaq.com/sushi-history/">Sushi FAQ - Sushi History</a></li>
+    </ul>
+    <p>Image Sources</p>
+    <ul>
+        <li><a href="https://www.history.com/topics/food/sushi">History of Sushi - History.com</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/History_of_sushi">History of Sushi - Wikipedia</a></li>
+        <li><a href="https://www.sushifaq.com/sushi-history/">Sushi FAQ - Sushi History</a></li>
+    </ul>
+<footer>
+    <p>&copy; Copyright Year: <span id="currentyear"></span></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&#10070; Aaron Islas &#10070; Utah, United States of America</p>
+</footer>
+</body>    
+</html>
