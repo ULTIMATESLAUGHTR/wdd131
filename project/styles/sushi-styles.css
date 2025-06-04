@@ -129,6 +129,17 @@ header {
   color: #ffffff;
 }
 
+a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 footer {
         display: flex;
         flex-direction: column;
