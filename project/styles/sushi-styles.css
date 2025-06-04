@@ -136,8 +136,8 @@ a {
 }
 
 a:hover, a:focus {
-    color: #ffffff;
-    text-decoration: underline;
+    color: red;
+    text-decoration: bold;
 }
 
 footer {
