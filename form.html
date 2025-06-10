@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form Practice for Class</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap" rel="stylesheet">
+    <meta name="author" content="Aaron Islas">
+    <meta name="description" content="A black survey form setup for class.">    
+</head>
+<body>
+<main>
+    <h1 class="form-title">Product Review</h1>
+    <form class="reviewForm" id="reviewForm" method="get" action="review.html">
+        <!-- Product Dropdown -->
+        <label for="products"><span class="bold">Product Name:</span><span class="required">*</span></label>
+        <select id="products" name="products" required>
+            <option value="" disabled selected>Choose a product to Review...</option>
+        </select>
+        <br><br>
+
+        <!-- Overall Rating -->
+        <label><span class="bold">Overall Rating:</span><span class="required">*</span></label>
+        <div class="rating-group">
+    <div class="star-radio">
+        <span class="star">⭐</span>
+        <input type="radio" id="star1" name="rating" value="1" required>
+    </div>
+    <div class="star-radio">
+        <span class="star">⭐⭐</span>
+        <input type="radio" id="star2" name="rating" value="2">
+    </div>
+    <div class="star-radio">
+        <span class="star">⭐⭐⭐</span>
+        <input type="radio" id="star3" name="rating" value="3">
+    </div>
+    <div class="star-radio">
+        <span class="star">⭐⭐⭐⭐</span>
+        <input type="radio" id="star4" name="rating" value="4">
+    </div>
+    <div class="star-radio">
+        <span class="star">⭐⭐⭐⭐⭐</span>
+        <input type="radio" id="star5" name="rating" value="5">
+    </div>
+</div>
+        <br>
+
+        <!-- Date of Installation -->
+        <label for="installDate"><span class="bold">Date of Installation:</span><span class="required">*</span></label>
+        <input type="date" id="installDate" name="installDate" required>
+        <br><br>
+
+        <!--Useful Features-->
+        <fieldset>
+        <legend><span class="bold">Which Features did you find useful in the product?</span> <span class="italic">(check all that apply)</span></legend>
+        <label>
+            <input type="checkbox" id="feature-durability" name="features" value="Durability">
+            - Durability
+        </label>
+        <label>
+            <input type="checkbox" id="feature-ease" name="features" value="Ease of Use">
+            - Ease of Use
+        </label>
+        <label>
+            <input type="checkbox" id="feature-performance" name="features" value="Performance">
+            - Performance
+        </label>
+        <label>
+            <input type="checkbox" id="feature-design" name="features" value="Design">
+            - Design
+        </label>
+
+        <label for="writtenReview"><span class="bold">Written Review</span> <span class="optional">(Optional)</span></label>
+        <textarea id="writtenReview" name="writtenReview" rows="7" cols="50" placeholder="Let us know what you think!"></textarea>
+        <br><br>
+
+        <label for="userName"><span class="bold">Your Name</span> <span class="optional">(Optional)</span></label>
+        <input type="text" id="userName" name="userName" placeholder="Enter your name">
+        <br><br>
+
+        <button type="submit">Post Review</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; Copyright Year: <span id="currentyear"></span></p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p>&#10070; Aaron Islas &#10070; Utah, United States of America</p>
+</footer>    
+</body>
+</html>
