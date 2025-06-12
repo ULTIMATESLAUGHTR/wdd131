@@ -1,28 +1,3 @@
-<!--Project Site Plan - HTML Template-->
-<!--This Project will be divided into 3 Pages. Page 1 will include The Origin of Sushi. 
-Page 2 will deal with Modern Sushi. Page 3 will be my Personal Journey as a Sushi Chef-->
-
-
-<!-- Site Name - sushihistory.org -->
-
-<!--Reason: Easy to recall and fast to type. Gives a quick summary of what the page will be about--> 
-
-<!--This site's purpose is to show the history of sushi, its origins, and how it has evolved over time. It will also include my personal journey as a sushi chef.-->
-
-<!--Scenario Questions: 1. What are the key historical events that shaped sushi's evolution? 
-Scenario Question 2: How has sushi's preparation and presentation changed over time?-->
-
-<!--Color Schema: For the Nav Bar, and containers of information it will be a #E30016 Red. 
-Main text including headings will be in standard white #FFFFFF. 
-Main Background Color will be a shaded black RGB(37, 35, 34, 0.7) - for readability.-->
-
-<!--Typography: Headings will use the Kaushan Script font, while main body text will use the Zen Old Mincho font.-->
-
-<!--Wireframes link to review will be through Moqups
-To See the Mobile Wireframe (Up to 900px wide) use this link - 
-https://app.moqups.com/qhV0l6OFgGv1AaazJt2W6QIhfbnKZWry/view/page/ad64222d5?fit_width=1-->
-
-<!--Page 1 Home Page Overview and Organization-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +11,7 @@ https://app.moqups.com/qhV0l6OFgGv1AaazJt2W6QIhfbnKZWry/view/page/ad64222d5?fit_
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
     <meta name="author" content="Aaron Islas">
-    <meta name="description" content="Explore the origins of sushi, its evolution, and my personal time being a Sushi Chef.">
+    <meta name="description" content="Explore the origins of sushi, its evolution, and my personal time being a Sushi Chef. Divided into 3 pages.">
 </head>
 <body>
 <header>
@@ -67,44 +42,57 @@ https://app.moqups.com/qhV0l6OFgGv1AaazJt2W6QIhfbnKZWry/view/page/ad64222d5?fit_
         </section>
     </div>
         <section class="haya-zushi-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>3 Popular Haya-zushi Types</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Nigirizushi</td>
-                        <td><img src="images/nigirizushi.jpg" alt="Nigirizushi"></td>
-                        <td>Description: Fish placed on top of a hand-pressed ball of vinegared rice.</td>
-                    </tr>
-                    <tr>
-                        <td>Chirashizushi</td>
-                        <td><img src="images/chirashizushi.jpg" alt="Chirashizushi"></td>
-                        <td>Description: A sliced assortment of fish that rests over a bed of sushi rice within a bowl.</td>
-                    </tr>
-                    <tr>
-                        <td>Makizushi</td>
-                        <td><img src="images/makizushi.jpg" alt="Makizushi"></td>
-                        <td>Description: Fish wrapped inside of Nori(Seaweed) sheets and vinegared rice to create a roll.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" style="font-size:1.3em;">3 Popular Haya-zushi Types</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Row 1: Images (spacious) -->
+            <tr>
+                <td style="padding: 20px;">
+                    <img src="images/nigirizushi.jpg" alt="Nigirizushi" style="width: 220px; height: auto; display: block; margin: 0 auto;">
+                </td>
+                <td style="padding: 20px;">
+                    <img src="images/chirashizushi.jpg" alt="Chirashizushi" style="width: 220px; height: auto; display: block; margin: 0 auto;">
+                </td>
+                <td style="padding: 20px;">
+                    <img src="images/makizushi.jpg" alt="Makizushi" style="width: 220px; height: auto; display: block; margin: 0 auto;">
+                </td>
+            </tr>
+            <!-- Row 2: Names -->
+            <tr>
+                <td style="text-align: center; font-weight: bold; font-size: 1.2em;">Nigirizushi</td>
+                <td style="text-align: center; font-weight: bold; font-size: 1.2em;">Chirashizushi</td>
+                <td style="text-align: center; font-weight: bold; font-size: 1.2em;">Makizushi</td>
+            </tr>
+            <!-- Row 3: Descriptions -->
+            <tr>
+                <td style="text-align: center;">Fish placed on top of a hand-pressed ball of vinegared rice.</td>
+                <td style="text-align: center;">A sliced assortment of fish that rests over a bed of sushi rice within a bowl.</td>
+                <td style="text-align: center;">Fish wrapped inside of Nori (Seaweed) sheets and vinegared rice to create a roll.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 </main>
 <section class="Sources">
     <h3 class="sources-h3-header">Document and Image Sources</h3>
-    <ul>
+    <button id="toggle-sources" class="toggle-button">Show Sources</button>
+    <ul class="hyperlink-list">
         <li><a href="https://www.history.com/topics/food/sushi">History of Sushi - History.com</a></li>
         <li><a href="https://en.wikipedia.org/wiki/History_of_sushi">History of Sushi - Wikipedia</a></li>
         <li><a href="https://www.sushifaq.com/sushi-history/">Sushi FAQ - Sushi History</a></li>
     </ul>
     <h4 class="image-sources-h4-header">Image Sources</h4>
-    <ul class="hyperlink-list">
-        <li><a href="https://www.history.com/topics/food/sushi">History of Sushi - History.com</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/History_of_sushi">History of Sushi - Wikipedia</a></li>
-        <li><a href="https://www.sushifaq.com/sushi-history/">Sushi FAQ - Sushi History</a></li>
+    <button id="toggle-image-sources" class="toggle-button">Show Image Sources</button>
+    <ul class="image-source-list">
+        <li><a href="https://commons.wikimedia.org/wiki/File:Narezushi.jpg">Narezushi - Wikimedia Commons</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Namanare.jpg">Namanare - Wikimedia Commons</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Nigirizushi.jpg">Nigirizushi - Wikimedia Commons</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Chirashizushi.jpg">Chirashizushi - Wikimedia Commons</a></li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Makizushi.jpg">Makizushi - Wikimedia Commons</a></li>
     </ul>
 </section>    
 <footer>
