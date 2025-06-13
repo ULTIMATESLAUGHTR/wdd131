@@ -26,6 +26,22 @@ function lastmodified() {
     return lastModified; // Return the last modified date if needed elsewhere
 }
 
+//Function for the Source Toggle Button
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggle-sources");
+    const sourceList = document.querySelector(".hyperlink-list");
+
+    toggleButton.addEventListener("click", function() {
+        if (sourceList.style.display === "none" || sourceList.style.display === "") {
+            sourceList.style.display = "block";
+            toggleButton.textContent = "Hide Sources";
+        } else {
+            sourceList.style.display = "none";
+            toggleButton.textContent = "Show Sources";
+        }
+    });
+});
+
 // Call the functions
 currentyear();
 lastmodified();
