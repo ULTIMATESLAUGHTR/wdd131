@@ -1,3 +1,18 @@
+:root {
+  --main-background-color: rgba(37, 35, 34, 0.7);
+  --main-text-color: #ffffff;
+  --secondary-text-color: black;
+  --header-bg-color: #E30016;
+  --header-text-color: white;
+  --footer-bg-color: #E30016;
+  --footer-text-color: white;
+  --image-border-color: black;
+  --content-border-color: rgba(37, 35, 34, 0.7);
+  --header-font: "Kaushan Script";
+  --body-font: "Zen Old Mincho", serif;
+  --font-size: 1.8rem;
+}
+
 .kaushan-script-regular {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
@@ -8,4 +23,80 @@
   font-family: "Zen Old Mincho", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+  @media (min-width: 1001px) {
+    .logo {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid var(--image-border-color);
+    margin-left: 70px;
+    z-index: 0;
+    }
+    .site-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: none;
+}
+.logo-large {
+    display: block;
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 10px solid var(--image-border-color);
+    margin: auto auto;
+    z-index: 0;
+}
+.main-nav {
+    flex: 1; /* Grow to fill remaining space */
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    list-style: none;
+    margin: 0;
+    padding: 65px 0;
+    gap: 2rem; /* Space between items */
+    font-family: var(--header-font);
+    font-size: var(--font-size);
+    color: var(--header-text-color);
+    text-decoration: none;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start; /* or space-between/center as needed */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: left;
+    align-items: left;
+
+
+}
+
+#menu-toggle {
+  display: none;
+}
+  #close-menu {
+  display: none;
+}
 }

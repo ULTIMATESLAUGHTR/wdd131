@@ -26,11 +26,56 @@
 }
 
 .logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
   width: 200px;
   height: auto;
   border-radius: 10px;
   border:10px solid var(--image-border-color);
   margin-left: 70px;
+}
+
+.logo-large {
+  display:none;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-width: 700px;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.main-nav {
+  flex: 1; /* Grow to fill remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+#menu-toggle, #close-menu {
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 20;
+
 }
 
 nav {
@@ -47,9 +92,15 @@ nav {
     width: 100%;
     max-width: 1000px;
     min-width: 860px;
-    max-height: 450px;
+    height: 250px;
     margin: 0 auto;
     font-family: var(--header-font);
+}
+
+.nav-list {
+    padding: 50px;
+    height: 450px;
+    margin-top: 55px;
 }
 
 nav ul {
@@ -67,9 +118,10 @@ nav li {
     flex-grow: 1;
     text-align: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 10px;
     margin-top: 10px;
     max-width: 1000px;
+
 }
 
 nav a {
@@ -201,7 +253,7 @@ figcaption {
   border-bottom: 2px solid var(--content-border-color);
 }
 .haya-zushi-table th, .haya-zushi-table td {
-  padding: 15px;
+  padding: 1px;
   text-align: center;
   font-size: 1.5rem;
   font-family: var(--body-font);
