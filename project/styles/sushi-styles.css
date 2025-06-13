@@ -239,6 +239,7 @@ figcaption {
   font-size: 1.5rem;
   color: var(--main-text-color);
 }
+
 .haya-zushi-table th {
   font-family: var(--body-font);
   font-size: 2rem;
@@ -255,7 +256,7 @@ figcaption {
 .haya-zushi-table th, .haya-zushi-table td {
   padding: 1px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: var(--body-font);
 }
 
@@ -326,7 +327,7 @@ footer {
         justify-content: center;
         margin-top: 2rem;
         font-family: var(--main-font);
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
         background-color: var(--footer-bg-color);
 }
