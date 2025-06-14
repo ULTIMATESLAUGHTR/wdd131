@@ -1,3 +1,44 @@
+// Selections Array localStorage Saving and Loading
+const selections = ["News", "I Have a Question"];
+
+// Save selections to localStorage
+localStorage.setItem('selections', JSON.stringify(selections));
+
+// Load selections from localStorage when the page loads
+document.addEventListener("DOMContentLoaded", function() {
+    const storedSelections = localStorage.getItem('selections');
+    if (storedSelections) {
+        const loadedSelections = JSON.parse(storedSelections);
+        console.log('Loaded selections:', loadedSelections);
+        // This will populate the form or use the loaded selections as needed
+    }
+});
+
+//Selections List for Newsletter/Question Form on modern-sushi.html
+const selectionOptions = [
+  {
+    id: "News",
+    name: "Sign up for the Newsletter",
+  },
+  {
+    id: "I Have a Question",
+    name: "I Have a Question"
+  }
+
+];
+// This sets up the Array of options to be used in the form.
+document.addEventListener("DOMContentLoaded", () => {
+    const productSelect = document.getElementById("selections");
+    if (productSelect && Array.isArray(selectionOptions)) {
+        selectionOptions.forEach(selection => {
+            const option = document.createElement("option");
+            option.value = selection.name;
+            option.textContent = selection.name;
+            productSelect.appendChild(option);
+        });
+    }
+});
+
 //Hamburger Menu Button
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu-toggle");

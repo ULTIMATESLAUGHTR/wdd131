@@ -3,7 +3,7 @@
   --main-text-color: #ffffff;
   --secondary-text-color: black;
   --header-bg-color: #E30016;
-  --header-text-color: white;
+  --header-text-color: wheat;
   --footer-bg-color: #E30016;
   --footer-text-color: white;
   --image-border-color: black;
@@ -24,6 +24,8 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/*This is Index.html's CSS Ruleset.*/
 
 .logo {
   position: absolute;
@@ -51,6 +53,7 @@
   min-width: 700px;
   margin: 0 auto;
   height: 300px;
+  color: var(--header-text-color);
 }
 
 .main-nav {
@@ -156,13 +159,13 @@ nav a:hover {
   font-family: var(--body-font);
   font-size: 2.5rem;
   text-align: center;
-  color: var(--main-text-color);
+  color: var(--header-text-color);
   margin-top: 100px;
 }
 
 body {
   background-color: var(--main-background-color);
-  color: var(--main-text-color);
+  color: var(--header-text-color);
   font-family: var(--body-font);
   min-width: 650px;
   max-width: 1000px;
@@ -264,7 +267,7 @@ figcaption {
   font-family: var(--body-font);
   font-size: 2.5rem;
   text-align: center;
-  color: var(--main-text-color);
+  color: var(--header-text-color);
   margin-top: 50px;
 }
 .hyperlink-list {
@@ -310,7 +313,6 @@ a:hover, a:focus {
 
 }
 
-
 .toggle-button:hover {
     background-color: rgba(227, 0, 22, 0.8);
     color:  var(--secondary-text-color);
@@ -320,6 +322,229 @@ a:hover, a:focus {
     transition: transform 0.3s ease;
 }
 
+/* This is page 2 - Modern Sushi's CSS Ruleset. */
+
+.home-h1-header {
+  font-family: var(--body-font);
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--header-text-color);
+  margin-top: 100px;
+}
+
+.california-roll-image {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  border-radius: 50px;
+  border: 5px solid var(--image-border-color);
+  box-shadow: 0 0 10px rgba(35, 35, 36, 0.5);
+  margin: auto auto;
+}
+
+.modern-history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(37, 35, 34, 0.7);
+  border-radius: 25px;
+}
+
+.video-h3-header {
+  font-family: var(--body-font);
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--header-text-color);
+  margin-top: 50px;
+}
+
+.sushi-video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 50px 50px 50px;
+  padding: 20px;
+  background-color: rgba(37, 35, 34, 0.7);
+  border-radius: 25px;
+}
+
+.youtube-video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto auto;
+}
+
+/* This is the contact form's CSS Ruleset on Modern-Sushi.html. */
+.form-header {
+  font-family: var(--body-font);
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  color: var(--header-text-color);
+  margin-top: 20px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(37, 35, 34, 0.7);
+  border-radius: 25px;
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--body-font);
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+select {
+    width: 80%;
+    padding: 12px 18px;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    border: 2px solid var(--selection-font-color--);
+    background-color: gray;
+    color: var(--selection-font-color--);
+    font-family: var(--header-font--);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid var(--selection-font-color--);
+    background-color: gray;
+    color:wheat;
+    border-color: var(--selection-font-color--);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+select option:hover {
+    background-color: gray;
+    border-color: gray;
+}
+
+select option {
+    font-size: 1.2rem;
+    color: var(--selection-font-color--);
+    background-color: gray;
+    padding: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+    height: 52px;
+}
+
+form input[type="text"] {
+    font-size: 1.6rem;
+    padding: 20px 25px;
+    border-radius: 35px;
+    border: 2px solid var(--main-font-color--);
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+
+form input[type="text"]:focus {
+    outline: 2px solid var(--selection-font-color--);
+    background-color: wheat;
+    color: var(--secondary-text-color);
+    border-color: var(--selection-font-color--);
+}
+
+form input[type="email"] {
+    font-size: 1.6rem;
+    padding: 20px 25px;
+    border-radius: 35px;
+    border: 2px solid var(--main-font-color--);
+    width: 100%;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+
+form textarea {
+    font-size: 1.6rem;
+    padding: 20px 25px;
+    border-radius: 35px;
+    border: 2px solid var(--main-font-color--);
+    width: 100%;
+    height: 150px;
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+}
+
+form textarea:focus {
+    outline: 2px solid var(--selection-font-color--);
+    background-color: wheat;
+    color: var(--secondary-text-color);
+    border-color: var(--selection-font-color--);
+}
+form input[type="email"]:focus {
+    outline: 2px solid var(--selection-font-color--);
+    background-color: wheat;
+    color: var(--secondary-text-color);
+    border-color: var(--selection-font-color--);
+}
+.required {
+  color: #E30016;
+  font-weight: bold;
+}
+
+.submit-form-button {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px auto;
+    width: 75%;
+    max-width: 500px;
+}
+
+.submit-form-button:hover {
+    background-color:#ffffff;
+    color: black;
+    box-shadow: 0 0 10px rgba(35, 35, 36, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1.1);
+}
 footer {
         display: flex;
         flex-direction: column;
