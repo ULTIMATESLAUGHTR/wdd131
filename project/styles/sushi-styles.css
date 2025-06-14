@@ -220,7 +220,7 @@ figcaption {
 }
 
 .overview-h2-header {
-  background-color: var(--header-background-color);
+  background-color:  var(--header-bg-color);
   color: var(--header-text-color);
   padding: 20px;
   text-align: center;
@@ -357,8 +357,12 @@ a:hover, a:focus {
   font-family: var(--body-font);
   font-size: 2.5rem;
   text-align: center;
-  color: var(--header-text-color);
+  color:  var(--header-text-color);
   margin-top: 50px;
+  background-color:#E30016;
+  padding: 20px;
+  border-radius: 50px;
+  width: 60%;
 }
 
 .sushi-video-section {
@@ -367,9 +371,11 @@ a:hover, a:focus {
   align-items: center;
   justify-content: center;
   margin: 50px 50px 50px 50px;
-  padding: 20px;
+  padding: 30px;
   background-color: rgba(37, 35, 34, 0.7);
-  border-radius: 25px;
+  border-radius: 50px 20px 50px 20px;
+  width: 800px;
+  max-width: 80%;
 }
 
 .youtube-video {
@@ -431,7 +437,6 @@ select:focus {
 
 select option:hover {
     background-color: gray;
-    border-color: gray;
 }
 
 select option {
@@ -539,7 +544,7 @@ form input[type="email"]:focus {
 }
 
 .submit-form-button:hover {
-    background-color:#ffffff;
+    background-color: wheat;
     color: black;
     box-shadow: 0 0 10px rgba(35, 35, 36, 0.5);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
