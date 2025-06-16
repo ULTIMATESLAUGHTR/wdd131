@@ -563,6 +563,17 @@ form input[type="email"]:focus {
 
 /*Image Carousel CSS*/
 
+.journey-h1-header {
+  font-family: var(--body-font);
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--header-text-color);
+  margin-top: 100px;
+  background-color: var(--header-bg-color);
+  padding: 20px;
+  border-radius: 50px;
+}
+
 .journey-container {
   display: flex;
   flex-direction: column;
