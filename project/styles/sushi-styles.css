@@ -568,4 +568,6 @@ footer {
         font-size: 1.2rem;
         font-weight: bold;
         background-color: var(--footer-bg-color);
+        height: 350px;
+        width: 100%;
 }

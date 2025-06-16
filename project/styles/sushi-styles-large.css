@@ -3,7 +3,7 @@
   --main-text-color: #ffffff;
   --secondary-text-color: black;
   --header-bg-color: #E30016;
-  --header-text-color: white;
+  --header-text-color: wheat;
   --footer-bg-color: #E30016;
   --footer-text-color: white;
   --image-border-color: black;
@@ -75,28 +75,48 @@ nav ul {
     display: flex;
     justify-content: flex-start; /* or space-between/center as needed */
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: auto auto;
+    padding: 10px;
 }
 
 nav li {
-    margin-right: 2rem;
+    margin-top: 2.5rem;
+    width: 100%;
 }
 
 nav a {
     display: block;
     text-decoration: none;
-    font-weight: bold;
     justify-content: left;
     align-items: left;
 
 
 }
 
+main {
+  width: 100%;
+  max-width: 1600px;
+  min-width: 1001px;
+  margin: 0 auto;
+}
+
 #menu-toggle {
   display: none;
 }
-  #close-menu {
+#close-menu {
   display: none;
 }
-}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: var(--footer-bg-color);
+  width: 100%;
+  }
+  }
