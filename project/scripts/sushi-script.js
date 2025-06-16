@@ -83,6 +83,32 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll(".carousel-slide");
+    const prevBtn = document.querySelector(".carousel-btn-prev");
+    const nextBtn = document.querySelector(".carousel-btn-next");
+    let current = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+        });
+    }
+
+    if (prevBtn && nextBtn && slides.length > 0) {
+        prevBtn.addEventListener("click", function() {
+            current = (current - 1 + slides.length) % slides.length;
+            showSlide(current);
+        });
+
+        nextBtn.addEventListener("click", function() {
+            current = (current + 1) % slides.length;
+            showSlide(current);
+        });
+
+        showSlide(current); // Show the first slide on load
+    }
+});
 // Call the functions
 currentyear();
 lastmodified();
