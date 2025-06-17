@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-
+// Sushi Carousel Function
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll(".sushi-carousel .carousel-slide");
     const prevBtn = document.querySelector(".sushi-carousel .carousel-btn.prev");
